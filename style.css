@@ -1,102 +1,94 @@
-styles.css
+/* style.css */
+
+/* Define CSS Variables for Light Mode */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --hobbies-bg-color: #f0f0f0;
+  --link-color: #1a0dab;
+  --button-bg-color: #e0e0e0;
+  --button-text-color: #000000;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --hobbies-bg-color: #1e1e1e;
+  --link-color: #bb86fc;
+  --button-bg-color: #333333;
+  --button-text-color: #ffffff;
+}
+
+/* Apply Variables */
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2em;
-}
 .profile-photo {
-    display: block;
-    margin: 0 auto;
-    width: 200px; /* Set the image width */
-    height: auto;  /* Keep the aspect ratio */
-    border-radius: 50%; /* Make it circular */
-    margin-bottom: 20px; /* Space between the image and text */
-  #hobbies {
-  background-color: #f0f0f0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+section {
   padding: 20px;
-  border-radius: 8px;
 }
 
-#hobbies h2 {
-  color: #333;
+h2 {
+  margin-top: 40px;
 }
 
-#hobbies ul {
-  list-style-type: square;
-}
-/* Add dark mode styles in me.css */
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-.dark-mode #hobbies {
-  background-color: #1e1e1e;
+a {
+  color: var(--link-color);
+  text-decoration: none;
 }
 
-/* Adjust other elements as needed */
-  /* me.css */
-
-/* Default (Light Mode) Styles */
-body {
-  background-color: #ffffff;
-  color: #000000;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#hobbies {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode #hobbies {
-  background-color: #1e1e1e;
-}
-
-/* Additional Dark Mode Adjustments */
-.dark-mode a {
-  color: #bb86fc;
+a:hover {
+  text-decoration: underline;
 }
 
 .toggle-button {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
-  padding: 10px 15px;
-  background-color: #e0e0e0;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
   border: none;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dark-mode .toggle-button {
-  background-color: #333333;
-  color: #ffffff;
+.toggle-button:hover {
+  opacity: 0.8;
 }
 
+.toggle-button:focus {
+  outline: 2px solid #00f;
+}
 
+@media (max-width: 600px) {
+  .toggle-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
