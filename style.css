@@ -28,3 +28,17 @@ p {
     height: auto;  /* Keep the aspect ratio */
     border-radius: 50%; /* Make it circular */
     margin-bottom: 20px; /* Space between the image and text */
+  #hobbies {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#hobbies h2 {
+  color: #333;
+}
+
+#hobbies ul {
+  list-style-type: square;
+}
+
