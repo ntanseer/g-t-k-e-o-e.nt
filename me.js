@@ -20,8 +20,6 @@ function toggleDarkMode() {
     localStorage.setItem('theme', 'dark');
   } else {
     localStorage.setItem('theme', 'light');
-  }
-}
 
 // Event listener for the toggle button
 toggleButton.addEventListener('click', toggleDarkMode);
