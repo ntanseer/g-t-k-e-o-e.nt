@@ -1,0 +1,30 @@
+styles.css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+}
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Set the image width */
+    height: auto;  /* Keep the aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Space between the image and text */
