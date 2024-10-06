@@ -41,4 +41,15 @@ p {
 #hobbies ul {
   list-style-type: square;
 }
+/* Add dark mode styles in me.css */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode #hobbies {
+  background-color: #1e1e1e;
+}
+
+/* Adjust other elements as needed */
 
