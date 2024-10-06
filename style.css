@@ -70,25 +70,5 @@ a:hover {
   bottom: 20px;
   right: 20px;
   background-color: var(--button-bg-color);
-  color: var(--button-text-color);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
+  co
 
-.toggle-button:hover {
-  opacity: 0.8;
-}
-
-.toggle-button:focus {
-  outline: 2px solid #00f;
-}
-
-@media (max-width: 600px) {
-  .toggle-button {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
