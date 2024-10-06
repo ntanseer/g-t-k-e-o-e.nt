@@ -21,9 +21,7 @@ function toggleDarkMode() {
 // Event listener for the toggle button
 if (toggleButton) {
     toggleButton.addEventListener('click', toggleDarkMode);
-} else {
-    console.error('Toggle button not found!'); // Debugging error message
-}
+} else 
 
 // Load the saved theme preference on page load
 window.addEventListener('DOMContentLoaded', () => {
