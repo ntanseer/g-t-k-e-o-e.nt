@@ -52,4 +52,51 @@ p {
 }
 
 /* Adjust other elements as needed */
+  /* me.css */
+
+/* Default (Light Mode) Styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#hobbies {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode #hobbies {
+  background-color: #1e1e1e;
+}
+
+/* Additional Dark Mode Adjustments */
+.dark-mode a {
+  color: #bb86fc;
+}
+
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode .toggle-button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 
